@@ -1,0 +1,157 @@
+/* Font setup */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f9;
+  color: #4d4d4d;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ffb6c1, #ff69b4);
+  color: white;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Navbar */
+nav {
+  background-color: #ffe4e1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8b008b;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #ffc0cb, #dda0dd);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn-cta {
+  background-color: white;
+  color: #d63384;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #fff0f5;
+  transform: scale(1.05);
+}
+
+/* Content Cards */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  max-width: 300px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #d63384;
+}
+
+.card p {
+  padding: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  background-color: #ffb6c1;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Atur dasar halaman agar tinggi penuh dan tanpa margin bawah */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Jika halaman sedikit isi, tetap dorong footer ke bawah */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Konten utama fleksibel agar mendorong footer */
+main, .content, .content-article {
+  flex: 1;
+}
+
+/* Footer tanpa space di bawah */
+footer {
+  background-color: #ffb6c1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  border-top: 1px solid #f2a6b3;
+}
